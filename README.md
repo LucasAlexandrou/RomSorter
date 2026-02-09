@@ -1,7 +1,11 @@
 # RomSorter
 
 This is a simple Java application that will sort your messy ROM folder into the their dedicated folder based on their file extension (their system). 
+
 Any issues or wanted file extensions/systems please use the issues tab on the github page.
+
+## Download
+To download and use the application yourself check out the latest [release](https://github.com/LucasAlexandrou/RomSorter/releases/tag/v1.0.0).
 
 ## Supported Systems
 Many systems are supported but not all, especially disc-based systems, so it may not be perfect for you
