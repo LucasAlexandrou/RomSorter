@@ -9,8 +9,9 @@ public class Menu {
         System.out.println("--------------------");
 
         boolean validFolder = false;
-        while (!validFolder) {
 
+        //Loop until an actual folder directory is given
+        while (!validFolder) {
             System.out.print("Please enter the exact folder path of your rom location:");
             String path = sc.nextLine().trim();
 
@@ -18,6 +19,7 @@ public class Menu {
 
             if(file.isDirectory() && file.exists()) {
                 validFolder = true;
+                //Pass the directory ready to scan all the roms/files
                 RomScanner.scanRoms(file);
             } else {
                 System.out.println(path + " was not a valid rom location.");

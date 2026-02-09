@@ -16,20 +16,21 @@ public class Sorter {
         int totalFailed = 0;
 
         for(String extension : romsMap.keySet()) {
-            //System.out.println(extension + " : " + romsMap.get(extension));
             List<Path> files = romsMap.get(extension);
 
+            //Get the folder name for extension
             String folderName = extensionMap.get(extension);
             Path targetFolder = startPath.resolve(folderName);
 
             try {
+                //If the folder does not exist already, create a new one
                 if (!Files.exists(targetFolder)) {
                     Files.createDirectories(targetFolder);
                     System.out.println("Creating directory " + targetFolder);
                 } else {
                     System.out.println("Directory " + targetFolder + " already exists");
                 }
-
+                // Move each file to its target folder
                 for (Path file : files) {
                     Path targetPath = targetFolder.resolve(file.getFileName());
 
@@ -47,6 +48,7 @@ public class Sorter {
                 totalFailed += files.size();
             }
         }
+        //Show the user stats of their sort
         System.out.println("--------------------------------");
         System.out.println("Sorting complete.");
         System.out.println("Files moved successfully: " + totalMoved);
