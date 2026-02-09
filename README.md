@@ -13,3 +13,11 @@ please use the github issues tab.
 The naming convention was purposefully chosen to be easily usable in common rom applications such as EmuDeck,
 so you should be able drop your organised folders right into the roms folder and they will automatically go
 exactly where they need to. 
+
+Quickly and simply take your messy rom collection as show:
+
+### Before Sorting
+![Before sorting](images/BeforeSort.PNG)
+
+### After Sorting
+![After sorting](images/AfterSort.PNG)
