@@ -22,7 +22,7 @@ public class Menu {
             } else {
                 System.out.println(path + " was not a valid rom location.");
             }
-
         }
+        sc.close();
     }
 }
